@@ -77,8 +77,8 @@ img {
     margin-right: 40px;
     align-items: center;
 }
-.nav-header-list:last-child {
-    margin-right: 0x;
+.nav-header-item:last-child {
+    margin-right: 0;
 }
 .nav-header-link {
     font-weight: 500;
@@ -97,11 +97,11 @@ img {
     margin-right: 40px;
     align-items: center;
 }
-.contacts-list:last-child {
-    margin-right: 0x;
-}
 .contacts-item {
     min-width: 153px;
+}
+.contacts-item:last-child {
+    margin-right: 0;
 }
 .contacts-link {
     font-size: 16px;
@@ -170,7 +170,7 @@ img {
     display: flex;
     margin-right: 24px;
 }
-.feature-list:last-child {
+.feature-item:last-child {
     margin-right: 0;
 }
 .feature-item {
@@ -214,7 +214,7 @@ img {
     max-width: 1128px;
     align-self: center;
 }
-.team-list:last-child {
+.team-item:last-child {
     margin-right: 0;
 }
 .team-item {
@@ -307,8 +307,11 @@ img {
     flex-direction: column;
 }
 .page-footer a {
-    display: inline-block;
+
     margin-bottom: 16px;
+}
+.part-logo {
+        display: inline-block;
 }
 .footer-description {
     font-size: 16px;
