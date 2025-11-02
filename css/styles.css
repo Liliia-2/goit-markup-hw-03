@@ -74,7 +74,6 @@ img {
 }
 .nav-header-list {
     display: flex;
-    column-gap: 40px;
     margin-right: 40px;
     align-items: center;
 }
@@ -95,7 +94,6 @@ img {
 }
 .contacts-list {
     display: flex;
-    column-gap: 40px;
     margin-right: 40px;
     align-items: center;
 }
@@ -168,10 +166,8 @@ img {
     padding-bottom: 120px;
     padding-top: 120px;
 }
-.section-feature .visually-hidden {}
 .feature-list {
     display: flex;
-    column-gap: 24px;
     margin-right: 24px;
 }
 .feature-list:last-child {
@@ -214,7 +210,6 @@ img {
 .team-list {
     display: flex;
     flex-direction: row;
-    column-gap: 24px;
     margin-right: 24px;
     max-width: 1128px;
     align-self: center;
