@@ -16,6 +16,9 @@ ul {
 a {
     text-decoration: none;
 }
+img {
+    display: block;
+}
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -41,9 +44,10 @@ a {
 .page-header .container {
     display: flex;
     justify-content: space-between;
-    gap: 332px;
+    column-gap: 332px;
     align-items: center;
     height: 72px;
+    border-bottom: 1px solid #e7e9fc;
 }
 .nav-header {
     display: flex;
@@ -59,6 +63,7 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px
 }
 .header-logo .part-logo {
     color: #2e2f42;
@@ -80,6 +85,9 @@ a {
     display: block;
     padding: 24px 0;
 }
+.nav-header-list {
+    margin-right: 40px;
+}
 .contacts {
     font-style: normal;
 }
@@ -87,6 +95,9 @@ a {
     display: flex;
     column-gap: 40px;
     align-items: center;
+}
+.contacts-item {
+    min-width: 153px;
 }
 .contacts-link {
     font-size: 16px;
@@ -125,12 +136,15 @@ a {
     background-color: #4d5ae5;
     cursor: pointer;
     height: 56px;
-    max-width: 169px;
-
+    min-width: 169px;
+    display: block;
+    margin: 48px 635px 188px 636px;
+    border-radius: 4px;
+    border: none;
 }
 .main-button:hover,
 .main-button:focus {
-    background-color: #404BBF
+    background-color: #404BBF;
 }
 .button-text {
     font-weight: 500;
@@ -144,9 +158,12 @@ a {
 /* #region Principals */
 .feature-list {
     display: flex;
-    column-gap:24px;
     padding-bottom: 120px;
     padding-top: 120px;
+}
+.feature-item {
+    margin-right: 24px;
+    width: calc((100% - 72px) / 4);
 }
 .feature-title {
     font-weight: 500;
@@ -154,8 +171,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-bottom: 8px;
-   
+    margin-bottom: 8px;
 }
 .feature-description {
     font-size: 16px;
@@ -167,14 +183,11 @@ a {
 /* #region Team */
 .team {
     background-color: #F4F4FD;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    row-gap: 72px;
 }
 .team-list {
     display: flex;
     flex-direction: row;
+    margin-right: 24px;
     column-gap: 24px;
     max-width: 1128px;
     padding-bottom: 120px;
@@ -188,49 +201,42 @@ a {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
-    padding-top: 180px;
+    padding-top: 120px;
+    margin-bottom: 72px;
 }
 .team-item {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
-.team-item-view {
+.team-item-view {}
+
+.name-position {
+    padding-top: 32px;
     padding-bottom: 32px;
+    text-align: center;
+    margin-bottom: 8px;
 }
 .team-item-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #2e2f42;
-    padding-bottom: 8px;
 }
 .team-item-position {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #434455;
-    padding-bottom: 32px;
 }
 /* #endregion Team */
 /* #region Portfolio */
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    row-gap: 72px;
-    padding: 120px 0;
-
-}
-.portfolio-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 48px;
+    padding: 120px 0 120px 0;
 }
 .portfolio-title {
     font-weight: 700;
@@ -240,6 +246,24 @@ a {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
+}
+.container-app {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .portfolio-name {
     font-weight: 500;
@@ -247,14 +271,13 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding: 32px 0 8px 16px;
+    margin-bottom: 8px;
 }
 .portfolio-description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding: 0 269px 32px 16px;
 }
 /* #endregion Portfolio */
 /* #region footer */
@@ -264,9 +287,12 @@ a {
 .page-footer .container {
     padding: 100px 0;
     display: flex;
-    row-gap: 16px;
     height: 312px;
     flex-direction: column;
+}
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .footer-description {
     font-size: 16px;
@@ -276,6 +302,5 @@ a {
     max-width: 264px;
     height: 72px;
     flex-grow: 1;
-
 }
 /* #endregion footer */
