@@ -78,6 +78,9 @@ img {
     margin-right: 40px;
     align-items: center;
 }
+.nav-header-list:last-child {
+    margin-right: 0x;
+}
 .nav-header-link {
     font-weight: 500;
     font-size: 16px;
@@ -95,6 +98,9 @@ img {
     column-gap: 40px;
     margin-right: 40px;
     align-items: center;
+}
+.contacts-list:last-child {
+    margin-right: 0x;
 }
 .contacts-item {
     min-width: 153px;
@@ -162,10 +168,14 @@ img {
     padding-bottom: 120px;
     padding-top: 120px;
 }
+.section-feature .visually-hidden {}
 .feature-list {
     display: flex;
     column-gap: 24px;
     margin-right: 24px;
+}
+.feature-list:last-child {
+    margin-right: 0;
 }
 .feature-item {
     width: calc((100% - 72px) / 4);
@@ -208,6 +218,9 @@ img {
     margin-right: 24px;
     max-width: 1128px;
     align-self: center;
+}
+.team-list:last-child {
+    margin-right: 0;
 }
 .team-item {
     background-color: #FFFFFF;
@@ -297,6 +310,10 @@ img {
     display: flex;
     height: 312px;
     flex-direction: column;
+}
+.page-footer a {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .footer-description {
     font-size: 16px;
